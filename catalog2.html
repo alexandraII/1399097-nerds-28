@@ -5,22 +5,11 @@
   <title>Проект Nerds</title>
 </head>
 
-
-<style type="text/css">
-
-header {
-background-color: #e1e1e1;
-}
-
-</style>
-
 <body>
 
 <header>
   <nav>
-    <a>
-      <img src="img/index-logo.svg" width="368" height="153" alt="Магазин готовых шаблонов">
-    </a>
+    <a><img src="img/index-logo.svg" width="368" height="153" alt="Магазин готовых шаблонов"></a>
     <ul>
       <li><a href="blank.html">Студия</a></li>
       <li><a href="blank.html">Клиенты</a></li>
@@ -30,51 +19,79 @@ background-color: #e1e1e1;
     <a href="blank.html">Корзина</a>
   </nav>
 
-<h1>Магазин готовых шаблонов</h1>
-
+  <h1>Магазин готовых шаблонов</h1>
 </header>
 
-<main> <!-- Список товаров -->
-  <aside> <!-- Форма фильтрации -->
-
-    <div class="header">Сетка:</div>
-     <div class="filter1">Адаптивная</div>
-     <div class="filter1">Фиксированная</div>
-     <div class="filter1">Резиновая</div>
-
-    <div class="header">Особенности:</div>
-     <div class="filter2">Слайдер</div>
-     <div class="filter2">Блок преимуществ</div>
-     <div class="filter2">Новости</div>
-     <div class="filter2">Галерея</div>
-     <div class="filter2">Корзина</div>
-     
-     <button type="button">Показать</button>
-
-   </aside>
-
+<div class="general">
+<div class="sort">Сортировать:</div>
+<div class="sort-price">По цене</div>
+<div class="sort-type">По типу</div>
+<div class="sort-name">По названию</div>
+  
+<main> <!-- Шаблоны -->
+  <ul>
+  <li><img src="https://via.placeholder.com/150x100" alt=""></li>
+  <li><img src="https://via.placeholder.com/150x100" alt=""></li>
+  <li><img src="https://via.placeholder.com/150x100" alt=""></li>
+</ul>
 </main>
 
+<div class="page">
+  <button type="button">1</button>
+  <button type="button">2</button>
+  <button type="button">3</button>
+  <button type="button">Следующая</button>
+</div>
+
+
+<aside>
+  <div class="filter-price">Стоимость:</div>
+
+  <div class="filter-net">Сетка:</div>
+    <div class="net">
+      <ul>
+        <li>Адаптивная</li>
+        <li>Фиксированная</li>
+        <li>Резиновая</li>
+      </ul>
+    </div>
+
+  <div class="filter-features">Особенности:</div>
+    <div class="features">
+      <ul>
+        <li>Слайдер</li>
+        <li>Блок преимуществ</li>
+        <li>Новости</li>
+        <li>Галерея</li>
+        <li>Корзина</li>
+      </ul>
+    </div>
+      
+  <button type="button">Показать</button>
+</aside>
+</div>
   
 <footer>
-  <div class="social-media">
-    <ul>
-      <li>
-        <a href="#">Вконтакте</a>
+  <div class="container"> 
+    <div class="social-media">
+      <ul>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a href="#">Фейсбук</a>
       </li>
-      <li>
-        <a href="#">Фейсбук</a>
-      </li>
-      <li>
-        <a href="#">Инстаграм</a>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="row">
-    <h2>Давайте дружить, это выгодно!</h2>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
-  </div>
+        <li>
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="lets">
+      <h3>Давайте дружить, это выгодно!</h3>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+ </div>
 
 </footer>
 
