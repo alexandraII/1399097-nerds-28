@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Проект Nerds</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <nav class="container">
+    <a class="logo">
+      <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
+    </a>
+    <ul class="navigation">
+      <li><a href="blank.html">Студия</a></li>
+      <li><a href="blank.html">Клиенты</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
+      <li><a href="blank.html">Контакты</a></li>
+    </ul>
+    <a class="cart" href="blank.html"><img src="img/cart-icon.svg" alt="Корзина">Корзина</a>
+  </nav>
+
+  <h1 class="header-title">Магазин готовых шаблонов</h1>
+</header>
+
+
+<div class="container">
+  <main class="main">
+      <div class="sort">
+          <h4 class="sort-title">Сортировать</h4>
+          <ul class="sort-type">
+            <li>по цене</li>
+            <li>по типу</li>
+            <li>по названию</li>
+          </ul>
+          <div class="sort-dir"></div>
+      </div>
+      <ul class="catalog">
+        <li><img src="img/Group12.jpg" width="361" height="618" alt="Каталог 1"></li>
+        <li><img src="img/Group13.jpg" width="360" height="619" alt="Каталог 2"></li>
+        <li><img src="img/Group14.jpg" width="360" height="619" alt="Каталог 3"></li>
+        <li><img src="img/Group15.jpg" width="360" height="619" alt="Каталог 4"></li>
+        <li><img src="img/Group16.jpg" width="360" height="619" alt="Каталог 5"></li>
+        <li><img src="img/Group17.jpg" width="360" height="619" alt="Каталог 6"></li>
+      </ul>
+
+  </main>
+</div>
+
+
+<div class="pagination">
+  <ul>
+    <li><a href="pagination-btn btn">1</a></li>
+    <li><a href="pagination-btn btn">2</a></li>
+    <li><a href="pagination-btn btn">3</a></li>
+    <li><a href="pagination-btn btn">Следующая</a></li>
+  </ul>
+</div>
+
+
+<aside class="aside">
+  <form class="form">
+    <fieldset class="fieldset">
+      <h4 class="fieldset-title">Стоимость:</h4>
+      <input type="range" min="0" max="15000" name="Price">
+      <div class="range-cell"><span>от</span></div>
+      <div class="range-cell">
+        <input id="priceMin" type="text" value="0" class="form-control">
+      </div>
+      <div class="range-cell"><span>до</span></div>
+      <div class="range-cell">
+        <input id="priceMax" type="text" value="15000" class="form-control">
+      </div>
+
+      <h4 class="fieldset-title">Сетка:</h4>
+      <p class="fieldset-text"><input type="radio" name="filter-radio" value="adaptive">Адаптивная</p>
+      <p class="fieldset-text"><input type="radio" name="filter-radio" value="fix">Фиксированная</p>
+      <p class="fieldset-text"><input type="radio" name="filter-radio" value="rubber">Резиновая</p>
+
+      <h4 class="fieldset-title">Особенности:</h4>
+      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Slider">Слайдер</p>
+      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Block">Блок преимуществ</p>
+      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="News">Новости</p>
+      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Gallery">Галерея</p>
+      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Basket">Корзина</p>
+
+      <input type="submit btn" value="Показать">
+
+    </fieldset>
+  </form>
+</aside>
+
+<div class="map">
+  <a class="map-btn" href="#"><img class="map-picture" src="img/map.png" width="1440" height="416" alt="Карта"></a>
+</div>
+
+
+<footer>
+  <div class="container"> 
+    <ul class="container-list">
+        <li class="social-media"><a href="#"><img src="img/icon-vk.svg" alt="Вконтакте"></a></li>
+        <li class="social-media"><a href="#"><img src="img/icon-fb.svg" alt="Фейсбук"></a></li>
+        <li class="social-media"><a href="#"><img src="img/icon-inst.svg" alt="Инстаграм"></a></li>
+    </ul>
+
+    <div class="lets">
+      <h3 class="lets-title">Давайте дружить, это выгодно!</h3>
+      <p class="lets-text">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+ </div>
+
+</footer>
+
+</body>
+</html>
