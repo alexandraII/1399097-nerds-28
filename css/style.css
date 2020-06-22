@@ -28,6 +28,7 @@ img {
 }
 
 .container {
+	display: block;
 	width: 1160px;
 	margin: 0 auto;
 	padding-top: 49px;
@@ -150,7 +151,9 @@ nav.container {
 	padding-right: 126px;
 	width: 1174px;
 	height: 529px;
+	padding-bottom: 73px;
 }
+
 
 .about-left {
 	display: inline-block;
@@ -218,23 +221,35 @@ nav.container {
 }
 
 .partners-container {
-	width: 1078px;
+	width: 1158px;
 	margin: 0 auto;
 	text-align: center;
+	border-top: 2px solid #EEEEEE;
+	padding-top: 63px;
+	padding-bottom: 50px;
 }
+
 
 .partners-logo {
 	list-style: none;
 	display: inline-flex;
 }
 
+.partners-logo li {
+	padding-right: 95px;
+}
+
 .partners-picture {
 }
 
 .map {
+	display: block;
+	position: relative;
+	overflow: hidden;
 }
 
 .map-picture {
+	width: 100%;
 }
 
 .footer {
