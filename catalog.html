@@ -5,13 +5,13 @@
   <title>Проект Nerds</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="css/style_catalog.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header class="header">
-  <nav class="container">
+  <nav class="container nav-container">
     <a class="logo">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс">
     </a>
@@ -28,16 +28,65 @@
 </header>
 
 
-<div class="container">
+<div class="container all-container">
+<aside class="aside">
+  <form class="form">
+    <fieldset class="fieldset">
+      <h4 class="fieldset-title">Стоимость:</h4>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="width: 30%; margin-left: 20%"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+            <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">
+              от <input type="number" name="min-price" value="0">
+            </label>
+            <label class="max-price">
+              до <input type="number" name="max-price" value="15000">
+            </label>
+          </div>
+        </div>
+
+      <h4 class="fieldset-title">Сетка:</h4>
+      <p class="fieldset-text"><input type="radio" name="filter-radio" value="adaptive" checked disabled="">Адаптивная</p>
+      <p class="fieldset-text"><input type="radio" name="filter-radio" value="fix">Фиксированная</p>
+      <p class="fieldset-text"><input type="radio" name="filter-radio" value="rubber">Резиновая</p>
+
+      <h4 class="fieldset-title">Особенности:</h4>
+      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Slider" checked="" disabled="">Слайдер</p>
+      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Block">Блок преимуществ</p>
+      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="News" checked="">Новости</p>
+      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Gallery">Галерея</p>
+      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Basket">Корзина</p>
+
+      <button class="submit btn">Показать</button>
+
+    </fieldset>
+  </form>
+</aside>
+
   <main class="main">
       <div class="sort">
-          <h4 class="sort-title">Сортировать</h4>
+          <h4 class="sort-title">Сортировать:</h4>
           <ul class="sort-type">
             <li>по цене</li>
             <li>по типу</li>
             <li>по названию</li>
           </ul>
-          <div class="sort-dir"></div>
+          <div class="sort-dir">
+            <p class="sort-btn">
+              <button class="btn-down" type="button">
+                <span class="visually-hidden">По убыванию</span> 
+              </button>
+              <button class="btn-up">
+                <span class="visually-hidden">По возрастанию</span> 
+              </button>
+            </p>
+          </div>
       </div>
       <ul class="catalog">
         <li><img src="img/Group12.jpg" width="361" height="618" alt="Каталог 1"></li>
@@ -48,54 +97,18 @@
         <li><img src="img/Group17.jpg" width="360" height="619" alt="Каталог 6"></li>
       </ul>
 
-
-    <div class="pagination">
-      <ul>
-        <li><a href="pagination-btn btn">1</a></li>
-        <li><a href="pagination-btn btn">2</a></li>
-        <li><a href="pagination-btn btn">3</a></li>
-        <li><a href="pagination-btn btn">Следующая</a></li>
+      <ul class="pagination">
+        <li class="pagination-btn btn"><a class="active" href="#">1</a></li>
+        <li class="pagination-btn btn"><a href="#">2</a></li>
+        <li class="pagination-btn btn"><a href="#">3</a></li>
+        <li class="pagination-btn btn"><a href="#">Следующая</a></li>
       </ul>
-    </div>
  </main>
-
-<aside class="aside">
-  <form class="form">
-    <fieldset class="fieldset">
-      <h4 class="fieldset-title">Стоимость:</h4>
-      <input type="range" min="0" max="15000" name="Price">
-      <div class="range-cell"><span>от</span></div>
-      <div class="range-cell">
-        <input id="priceMin" type="text" value="0" class="form-control">
-      </div>
-      <div class="range-cell"><span>до</span></div>
-      <div class="range-cell">
-        <input id="priceMax" type="text" value="15000" class="form-control">
-      </div>
-
-      <h4 class="fieldset-title">Сетка:</h4>
-      <p class="fieldset-text"><input type="radio" name="filter-radio" value="adaptive">Адаптивная</p>
-      <p class="fieldset-text"><input type="radio" name="filter-radio" value="fix">Фиксированная</p>
-      <p class="fieldset-text"><input type="radio" name="filter-radio" value="rubber">Резиновая</p>
-
-      <h4 class="fieldset-title">Особенности:</h4>
-      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Slider">Слайдер</p>
-      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Block">Блок преимуществ</p>
-      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="News">Новости</p>
-      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Gallery">Галерея</p>
-      <p class="fieldset-text"><input type="checkbox" name="filter-checkbox" value="Basket">Корзина</p>
-
-      <input type="submit btn" value="Показать">
-
-    </fieldset>
-  </form>
-</aside>
 </div>
 
 <div class="map">
   <a class="map-btn" href="#"><img class="map-picture" src="img/map.png" width="1440" height="416" alt="Карта"></a>
 </div>
-
 
 <footer class="footer">
   <div class="container"> 
